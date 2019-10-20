@@ -1,1 +1,1 @@
-game.html
+https://alkhtemi.github.io/game12/
