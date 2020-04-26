@@ -17,11 +17,12 @@
 
         .player.local canvas {
             display: inline-block;
-            border-color: #fff;
+            border-color: rgb(212, 13, 13);
+        
         }
 
         canvas {
-            border: solid .2em #fff;
+            border: solid .2em rgb(58, 56, 56);
             height: 90vh;
         }
         #theHead{
@@ -42,23 +43,18 @@
         font-family: "Courier New";
         width: 5em;
         margin: 5px auto;
-        
+        display: flex;
       }
       #main{
-        display: none;
+        display: flex;
       }
-      #backBtn{
-        display: none;
-      }
-    #newwin{
-        position:absolute;
-    }
+
+
     </style>
 </head>
 <body>
     <div id="theHead">Welcome to Tetris!</div>
     <div id="newGame" onclick="runGame()" onmouseover="this.style.backgroundColor = 'goldenrod'" onmouseout="this.style.backgroundColor = 'gold'">New Game</div>
-    <div id="backBtn" onmouseover="this.style.backgroundColor = 'goldenrod'" onmouseout="this.style.backgroundColor = 'gold'" onclick="goBack()">Back</div>
     <div id="newwin">Tetris: Made by Mohammed</div>
        
     <div id="main">
@@ -67,8 +63,8 @@
             <div class="score"></div>
             <canvas class="tetris" width="240" height="400"></canvas>
         </div>
-    </div>
         </template>
+    </div>
 
     <script src="client/connection-manager.js"></script>
     <script src="client/tetris-manager.js"></script>
@@ -95,16 +91,5 @@
       document.getElementById("newGame").style.display = "block"
           };
       </script>
-      <!-- Footer -->
-<footer class="page-footer font-small blue">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
 </body>
 </html>
